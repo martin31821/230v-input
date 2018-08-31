@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name atmel)(type Legacy)(uri ${KIPRJMOD}/atmel.lib)(options "")(descr ""))
+  (lib (name udn2987)(type Legacy)(uri /home/mkoppehel/Documents/230v-input/udn2987.lib)(options "")(descr ""))
 )
