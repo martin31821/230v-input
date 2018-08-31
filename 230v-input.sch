@@ -52,7 +52,7 @@ U 1 1 5B87BE53
 P 8900 1795
 F 0 "J1" H 9006 2173 50  0000 C CNN
 F 1 "LOGIC_OUT" H 9006 2082 50  0000 C CNN
-F 2 "Connectors_Phoenix:PhoenixContact_MC-G_06x3.81mm_Angled" H 8900 1795 50  0001 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MSTBA-G_06x5.00mm_Angled" H 8900 1795 50  0001 C CNN
 F 3 "~" H 8900 1795 50  0001 C CNN
 	1    8900 1795
 	-1   0    0    1   
@@ -849,9 +849,9 @@ Wire Wire Line
 	10070 3915 10070 3845
 Wire Wire Line
 	10070 3845 10150 3845
-Text HLabel 10150 3745 0    50   UnSpc ~ 0
-UART_RX
 Text HLabel 10150 3645 0    50   UnSpc ~ 0
+UART_RX
+Text HLabel 10150 3745 0    50   UnSpc ~ 0
 UART_TX
 Text HLabel 5200 2690 2    50   UnSpc ~ 0
 UART_RX
