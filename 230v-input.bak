@@ -849,9 +849,9 @@ Wire Wire Line
 	10070 3915 10070 3845
 Wire Wire Line
 	10070 3845 10150 3845
-Text HLabel 10150 3745 0    50   UnSpc ~ 0
-UART_RX
 Text HLabel 10150 3645 0    50   UnSpc ~ 0
+UART_RX
+Text HLabel 10150 3745 0    50   UnSpc ~ 0
 UART_TX
 Text HLabel 5200 2690 2    50   UnSpc ~ 0
 UART_RX
