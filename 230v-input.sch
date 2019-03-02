@@ -337,8 +337,6 @@ Wire Wire Line
 	1630 3710 1630 3425
 Wire Wire Line
 	1630 3425 2020 3425
-Wire Wire Line
-	2020 3425 2020 3260
 $Comp
 L Device:C C3
 U 1 1 5B87F397
@@ -406,17 +404,6 @@ Wire Wire Line
 Wire Wire Line
 	2550 3240 2550 4465
 $Comp
-L Device:R R1
-U 1 1 5B88673F
-P 1285 2690
-F 0 "R1" V 1078 2690 50  0000 C CNN
-F 1 "330" V 1169 2690 50  0000 C CNN
-F 2 "Inductors_SMD:L_0805" V 1215 2690 50  0001 C CNN
-F 3 "~" H 1285 2690 50  0001 C CNN
-	1    1285 2690
-	0    1    1    0   
-$EndComp
-$Comp
 L atmel:SAMD20E14A-AU U1
 U 1 1 5B87E990
 P 3950 3940
@@ -427,110 +414,12 @@ F 3 "" H 3950 3940 50  0001 C CNN
 	1    3950 3940
 	1    0    0    -1  
 $EndComp
-Text HLabel 1135 2690 0    50   Input ~ 0
+Text HLabel 1435 2690 0    50   Input ~ 0
 MCU_RESET
-Wire Wire Line
-	1435 2690 1490 2690
-$Comp
-L Device:R R2
-U 1 1 5B888B36
-P 1490 2900
-F 0 "R2" V 1435 2670 50  0000 L CNN
-F 1 "2k2" V 1405 2825 50  0000 L CNN
-F 2 "Inductors_SMD:L_0805" V 1420 2900 50  0001 C CNN
-F 3 "~" H 1490 2900 50  0001 C CNN
-	1    1490 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 5B888C7C
-P 1750 2915
-F 0 "C2" V 1695 2705 50  0000 L CNN
-F 1 "100pF" V 1630 2815 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 1788 2765 50  0001 C CNN
-F 3 "~" H 1750 2915 50  0001 C CNN
-	1    1750 2915
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1490 3050 1490 3260
-Wire Wire Line
-	1750 3065 1750 3260
-Wire Wire Line
-	1750 3260 2020 3260
-Connection ~ 2020 3260
-Wire Wire Line
-	2020 3260 2020 3090
-Wire Wire Line
-	1750 3260 1490 3260
-Connection ~ 1750 3260
-Wire Wire Line
-	1490 2750 1490 2690
-Connection ~ 1490 2690
-Wire Wire Line
-	1490 2690 1750 2690
-Wire Wire Line
-	1750 2765 1750 2690
-Connection ~ 1750 2690
-Wire Wire Line
-	1750 2690 2700 2690
-$Comp
-L Device:R R3
-U 1 1 5B88CBCA
-P 5465 5420
-F 0 "R3" H 5535 5466 50  0000 L CNN
-F 1 "1k" H 5535 5375 50  0000 L CNN
-F 2 "Inductors_SMD:L_0805" V 5395 5420 50  0001 C CNN
-F 3 "~" H 5465 5420 50  0001 C CNN
-	1    5465 5420
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0113
-U 1 1 5B88CC89
-P 5465 5635
-F 0 "#PWR0113" H 5465 5485 50  0001 C CNN
-F 1 "+5V" H 5480 5808 50  0000 C CNN
-F 2 "" H 5465 5635 50  0001 C CNN
-F 3 "" H 5465 5635 50  0001 C CNN
-	1    5465 5635
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5465 5635 5465 5570
-Wire Wire Line
-	5465 5270 5465 5090
-Wire Wire Line
-	5465 5090 5200 5090
-Text HLabel 5565 5090 2    50   Input ~ 0
+Text HLabel 5200 5090 2    50   Input ~ 0
 SWCLK
-Wire Wire Line
-	5465 5090 5565 5090
-Connection ~ 5465 5090
-Wire Wire Line
-	5200 5190 5565 5190
-Text HLabel 5565 5190 2    50   Input ~ 0
+Text HLabel 5200 5190 2    50   Input ~ 0
 SWDIO
-$Comp
-L Device:Crystal_Small Y1
-U 1 1 5B89178E
-P 5795 3890
-F 0 "Y1" H 5795 4115 50  0000 C CNN
-F 1 "8MHz" H 5795 4024 50  0000 C CNN
-F 2 "Crystals:Crystal_HC49-U_Vertical" H 5795 3890 50  0001 C CNN
-F 3 "~" H 5795 3890 50  0001 C CNN
-	1    5795 3890
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5695 3890 5650 3890
-Wire Wire Line
-	5200 3990 5970 3990
-Wire Wire Line
-	5970 3990 5970 3890
-Wire Wire Line
-	5970 3890 5895 3890
 Text HLabel 10010 985  0    50   UnSpc ~ 0
 DETECT_A
 Text HLabel 10010 1065 0    50   UnSpc ~ 0
@@ -604,11 +493,11 @@ Wire Wire Line
 	1375 6635 1375 6555
 Wire Wire Line
 	1375 6555 1275 6555
-Text HLabel 1275 6455 2    50   UnSpc ~ 0
+Text HLabel 1275 6255 2    50   UnSpc ~ 0
 MCU_RESET
 Text HLabel 1275 6355 2    50   UnSpc ~ 0
 SWCLK
-Text HLabel 1275 6255 2    50   UnSpc ~ 0
+Text HLabel 1275 6455 2    50   UnSpc ~ 0
 SWDIO
 $Comp
 L 230v-input-rescue:UDN2987-udn2987 IC1
@@ -751,64 +640,6 @@ Wire Wire Line
 Text HLabel 5535 1410 3    50   UnSpc ~ 0
 FAULT
 $Comp
-L Device:C C9
-U 1 1 5B8B4D3D
-P 6250 4095
-F 0 "C9" H 6365 4141 50  0000 L CNN
-F 1 "22pF" H 6365 4050 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 6288 3945 50  0001 C CNN
-F 3 "~" H 6250 4095 50  0001 C CNN
-	1    6250 4095
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C10
-U 1 1 5B8B4DC1
-P 6665 4105
-F 0 "C10" H 6780 4151 50  0000 L CNN
-F 1 "22pF" H 6780 4060 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 6703 3955 50  0001 C CNN
-F 3 "~" H 6665 4105 50  0001 C CNN
-	1    6665 4105
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5970 3890 6250 3890
-Wire Wire Line
-	6250 3890 6250 3945
-Connection ~ 5970 3890
-Wire Wire Line
-	5650 3800 6665 3800
-Wire Wire Line
-	6665 3800 6665 3955
-Wire Wire Line
-	5650 3800 5650 3890
-Connection ~ 5650 3890
-Wire Wire Line
-	5650 3890 5200 3890
-$Comp
-L power:GND #PWR03
-U 1 1 5B8BA3DD
-P 6465 4355
-F 0 "#PWR03" H 6465 4105 50  0001 C CNN
-F 1 "GND" H 6470 4182 50  0000 C CNN
-F 2 "" H 6465 4355 50  0001 C CNN
-F 3 "" H 6465 4355 50  0001 C CNN
-	1    6465 4355
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6465 4355 6465 4310
-Wire Wire Line
-	6465 4310 6665 4310
-Wire Wire Line
-	6665 4310 6665 4255
-Wire Wire Line
-	6465 4310 6250 4310
-Wire Wire Line
-	6250 4310 6250 4245
-Connection ~ 6465 4310
-$Comp
 L Connector:Conn_01x04_Female J7
 U 1 1 5B8BE3CE
 P 10350 3645
@@ -939,4 +770,8 @@ Wire Wire Line
 	8340 1595 8700 1595
 Wire Wire Line
 	8145 1175 8340 1175
+Wire Wire Line
+	2020 3090 2020 3425
+Wire Wire Line
+	1435 2690 2700 2690
 $EndSCHEMATC
